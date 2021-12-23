@@ -654,11 +654,12 @@ header .logo {
 }
 .icon-close {
   position: absolute;
-  top: 0%;
-  right: 0%;
-  top: 8px;  
-  right: 8px;
+  top: 9px;  
+  right: 9px;
   fill: #212121;
   stroke: black;
   z-index: 5;
+}
+.icon-close.is-hidden {
+   pointer-events: none;
 }

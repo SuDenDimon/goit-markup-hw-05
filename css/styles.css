@@ -633,7 +633,7 @@ header .logo {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -644,22 +644,25 @@ header .logo {
   border-radius: 4px;
 }
 .button-modal {
-  position: fixed;
+  position: absolute;
   border: 1px solid #2f303a;
   width: 30px;
   height: 30px;
-  top: 0%;
-  right: 0%;
+  top: 8px;
+  right: 8px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
   border-radius: 50%;
 }
 .icon-close {
   position: absolute;
-  top: 9px;  
-  right: 9px;
+  top: 16px; 
+  right: 16px;
   fill: #212121;
   stroke: black;
   z-index: 5;
 }
 .icon-close.is-hidden {
-   pointer-events: none;
+  pointer-events: none;
 }
